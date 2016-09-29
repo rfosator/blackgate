@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blackgate.API", "Blackgate.API\Blackgate.API.csproj", "{27E74E17-DD82-433A-9C57-EF41CA553E8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blackgate.DataModel", "Blackgate.DataModel\Blackgate.DataModel.csproj", "{FB559F9F-AEF0-4F46-B2DB-49C7C5A9CD21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blackgate.Service", "Blackgate.Service\Blackgate.Service.csproj", "{24C43DBA-0195-4F17-9E81-48E5971D8CBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27E74E17-DD82-433A-9C57-EF41CA553E8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27E74E17-DD82-433A-9C57-EF41CA553E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27E74E17-DD82-433A-9C57-EF41CA553E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27E74E17-DD82-433A-9C57-EF41CA553E8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB559F9F-AEF0-4F46-B2DB-49C7C5A9CD21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB559F9F-AEF0-4F46-B2DB-49C7C5A9CD21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB559F9F-AEF0-4F46-B2DB-49C7C5A9CD21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB559F9F-AEF0-4F46-B2DB-49C7C5A9CD21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24C43DBA-0195-4F17-9E81-48E5971D8CBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24C43DBA-0195-4F17-9E81-48E5971D8CBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24C43DBA-0195-4F17-9E81-48E5971D8CBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24C43DBA-0195-4F17-9E81-48E5971D8CBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

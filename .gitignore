@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Blackgate/Blackgate.DataModel/bin/Debug
+/Blackgate/Blackgate.DataModel/obj/Debug
+/Blackgate/Blackgate.API/bin
+/Blackgate/Blackgate.API/obj/Debug
+/Blackgate/packages
+/Blackgate/Blackgate.Service/obj/Debug
