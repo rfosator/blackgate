@@ -56,6 +56,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
@@ -106,22 +110,23 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="App_Start\DependencyConfig.cs" />
+    <Compile Include="Attributes.cs" />
+    <Compile Include="Controllers\CourseController.cs" />
+    <Compile Include="Controllers\TopicController.cs" />
+    <Compile Include="Extensions\Mapper.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\Helper.cs" />
+    <Compile Include="Models\TrainingModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitOfWork.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Blackgate.DataModel\Blackgate.DataModel.csproj">
       <Project>{fb559f9f-aef0-4f46-b2db-49c7c5a9cd21}</Project>
       <Name>Blackgate.DataModel</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Blackgate.Service\Blackgate.Service.csproj">
-      <Project>{24c43dba-0195-4f17-9e81-48e5971d8cba}</Project>
-      <Name>Blackgate.Service</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
