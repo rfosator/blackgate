@@ -51,23 +51,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\Course.cs">
+    <Compile Include="Extensions.cs" />
+    <Compile Include="IRepository.cs" />
+    <Compile Include="IUnitOfWork.cs" />
+    <Compile Include="Domain\Course.cs">
       <DependentUpon>Training.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\Topic.cs">
+    <Compile Include="Domain\Topic.cs">
       <DependentUpon>Training.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\Training.Context.cs">
+    <Compile Include="Domain\Training.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Training.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\Training.cs">
+    <Compile Include="Domain\Training.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Training.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\Training.Designer.cs">
+    <Compile Include="Domain\Training.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Training.edmx</DependentUpon>
@@ -77,24 +80,24 @@
     <Compile Include="Repository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="Model\Training.edmx">
+    <EntityDeploy Include="Domain\Training.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Training.Designer.cs</LastGenOutput>
     </EntityDeploy>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
-    <None Include="Model\Training.edmx.diagram">
+    <None Include="Domain\Training.edmx.diagram">
       <DependentUpon>Training.edmx</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Model\Training.Context.tt">
+    <Content Include="Domain\Training.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Training.edmx</DependentUpon>
       <LastGenOutput>Training.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Model\Training.tt">
+    <Content Include="Domain\Training.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Training.edmx</DependentUpon>
       <LastGenOutput>Training.cs</LastGenOutput>

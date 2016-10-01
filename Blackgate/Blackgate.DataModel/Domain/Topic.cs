@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Blackgate.DataModel.Model
+namespace Blackgate.DataModel.Domain
 {
     using System;
     using System.Collections.Generic;
@@ -17,7 +17,7 @@ namespace Blackgate.DataModel.Model
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Topic()
         {
-            this.TopicChild = new HashSet<Topic>();
+            this.Topic1 = new HashSet<Topic>();
         }
     
         public int Id { get; set; }
@@ -32,7 +32,7 @@ namespace Blackgate.DataModel.Model
     
         public virtual Course Course { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Topic> TopicChild { get; set; }
-        public virtual Topic TopicParent { get; set; }
+        public virtual ICollection<Topic> Topic1 { get; set; }
+        public virtual Topic Topic2 { get; set; }
     }
 }

@@ -8,12 +8,7 @@
         <EntityTypeShape EntityType="BlackgateModel.Course" Width="1.5" PointX="0.75" PointY="1.5" />
         <EntityTypeShape EntityType="BlackgateModel.Topic" Width="1.5" PointX="3" PointY="1" />
         <AssociationConnector Association="BlackgateModel.FK_Topic_Course" />
-        <AssociationConnector Association="BlackgateModel.FK_Topic_Topic" ManuallyRouted="true" >
-          <ConnectorPoint PointX="3.5319230769230767" PointY="4.326396484375" />
-          <ConnectorPoint PointX="3.5319230769230767" PointY="4.6041856673650381" />
-          <ConnectorPoint PointX="3.9784615384615383" PointY="4.6041856673650381" />
-          <ConnectorPoint PointX="3.9784615384615383" PointY="4.326396484375" />
-        </AssociationConnector>
+        <AssociationConnector Association="BlackgateModel.FK_Topic_Topic" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

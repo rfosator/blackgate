@@ -108,8 +108,8 @@
           <Property Name="Progress" Type="Byte" Nullable="false" />
           <Property Name="IsEnabled" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="Course" Relationship="BlackgateModel.FK_Topic_Course" FromRole="Topic" ToRole="Course" />
-          <NavigationProperty Name="TopicChild" Relationship="BlackgateModel.FK_Topic_Topic" FromRole="Topic" ToRole="Topic1" />
-          <NavigationProperty Name="TopicParent" Relationship="BlackgateModel.FK_Topic_Topic" FromRole="Topic1" ToRole="Topic" />
+          <NavigationProperty Name="Topic1" Relationship="BlackgateModel.FK_Topic_Topic" FromRole="Topic" ToRole="Topic1" />
+          <NavigationProperty Name="Topic2" Relationship="BlackgateModel.FK_Topic_Topic" FromRole="Topic1" ToRole="Topic" />
         </EntityType>
         <Association Name="FK_Topic_Course">
           <End Type="BlackgateModel.Course" Role="Course" Multiplicity="1" />

@@ -7,7 +7,5 @@ namespace Blackgate.DataModel
         public EfContext(string nameOrStringConnection) : base(nameOrStringConnection)
         {
         }
-
-        public IDbSet<TEntity> Entity { get; set; }
     }
 }

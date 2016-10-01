@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Blackgate.DataModel.Model
+namespace Blackgate.DataModel.Domain
 {
     using System;
     using System.Collections.Generic;
